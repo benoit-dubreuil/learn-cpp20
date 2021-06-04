@@ -4,7 +4,7 @@ version: 0.1.0-a.0.z
 summary: learn-cpp20 C++ executable
 license: other: MIT
 description-file: README.md
-url: https://example.org/learn-cpp20
+url: https://github.com/benoit-dubreuil/learn-cpp20
 email: benoit-dubreuil@users.noreply.github.com
 depends: * build2 >= 0.13.0
 depends: * bpkg >= 0.13.0
