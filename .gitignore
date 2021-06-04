@@ -1,30 +1,3 @@
-learn-cpp20/.bdep/
-
-# Local default options files.
-#
-.build2/local/
-
-# Compiler/linker output.
-#
-*.d
-*.t
-*.i
-*.ii
-*.o
-*.obj
-*.so
-*.dll
-*.a
-*.lib
-*.exp
-*.pdb
-*.ilk
-*.exe
-*.exe.dlls/
-*.exe.manifest
-*.pc
-
-
 # Created by https://www.toptal.com/developers/gitignore/api/clion+all
 # Edit at https://www.toptal.com/developers/gitignore?templates=clion+all
 
