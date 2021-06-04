@@ -11,4 +11,5 @@ AlignConsecutiveBitFields: AcrossEmptyLinesAndComments
 AlignConsecutiveDeclarations: AcrossEmptyLinesAndComments
 AlignOperands: AlignAfterOperator
 ColumnLimit: 180
+BreakBeforeBraces: Allman
 Standard: c++20
