@@ -1,6 +1,6 @@
 libs =
 #import libs += libhello%lib{hello}
 
-exe{learn-cpp20}: {hpp ipp tpp cpp}{**} $libs testscript
+exe{learn-cpp20}: {hxx ixx txx cxx}{**} $libs testscript
 
-cpp.poptions =+ "-I$out_root" "-I$src_root"
+cxx.poptions =+ "-I$out_root" "-I$src_root"
