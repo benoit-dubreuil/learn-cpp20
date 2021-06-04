@@ -3,7 +3,6 @@ BasedOnStyle: LLVM
 IndentWidth: 4
 ---
 Language: Cpp
-BasedOnStyle: LLVM
 AccessModifierOffset: -2
 AlignAfterOpenBracket: Align
 AlignConsecutiveMacros: AcrossEmptyLinesAndComments
