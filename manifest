@@ -8,4 +8,3 @@ url: https://example.org/learn-cpp20
 email: benoit-dubreuil@users.noreply.github.com
 depends: * build2 >= 0.13.0
 depends: * bpkg >= 0.13.0
-#depends: libhello ^1.0.0
