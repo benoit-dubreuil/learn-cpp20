@@ -24,6 +24,7 @@
       "name": "default",
       "configurePreset": "default",
       "output": {
+        "shortProgress": true,
         "outputOnFailure": true
       },
       "execution": {
