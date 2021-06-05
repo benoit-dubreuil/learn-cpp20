@@ -171,8 +171,8 @@
   ],
   "testPresets": [
     {
-      "name": "default",
-      "configurePreset": "default",
+      "name": "base",
+      "hidden": true,
       "output": {
         "shortProgress": true,
         "outputOnFailure": true
@@ -181,6 +181,36 @@
         "noTestsAction": "error",
         "stopOnFailure": false
       }
+    },
+    {
+      "name": "windows-native-x64-ninja-msvc-debug",
+      "configurePreset": "windows-native-x64-ninja-msvc-debug",
+      "inherits": "base"
+    },
+    {
+      "name": "windows-native-x64-ninja-msvc-release",
+      "configurePreset": "windows-native-x64-ninja-msvc-release",
+      "inherits": "base"
+    },
+    {
+      "name": "windows-native-x64-ninja-msvc-relwithdebinfo",
+      "configurePreset": "windows-native-x64-ninja-msvc-relwithdebinfo",
+      "inherits": "base"
+    },
+    {
+      "name": "windows-native-x64-ninja-clang-debug",
+      "configurePreset": "windows-native-x64-ninja-clang-debug",
+      "inherits": "base"
+    },
+    {
+      "name": "windows-native-x64-ninja-clang-release",
+      "configurePreset": "windows-native-x64-ninja-clang-release",
+      "inherits": "base"
+    },
+    {
+      "name": "windows-native-x64-ninja-clang-relwithdebinfo",
+      "configurePreset": "windows-native-x64-ninja-clang-relwithdebinfo",
+      "inherits": "base"
     }
   ]
 }
