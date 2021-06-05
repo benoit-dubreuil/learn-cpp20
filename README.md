@@ -1,1 +1,3 @@
-# Learn C++20
+# learn-cpp20
+
+C++ executable
