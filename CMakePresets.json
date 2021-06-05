@@ -131,6 +131,16 @@
         "clang",
         "release"
       ]
+    },
+    {
+      "name": "windows-native-x64-ninja-clang-relwithdebinfo",
+      "inherits": [
+        "project-structure",
+        "windows-native",
+        "x64-ninja",
+        "clang",
+        "relwithdebinfo"
+      ]
     }
   ],
   "buildPresets": [
