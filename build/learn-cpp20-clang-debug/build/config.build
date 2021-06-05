@@ -5,7 +5,7 @@ config.version = 1
 config.config.persist = 'config.import.*'@unused=save
 
 config.cc.poptions = [null]
-config.cc.coptions = [null]
+config.cc.coptions = -g -Wall -Wextra -pedantic
 config.cc.loptions = [null]
 config.cc.aoptions = [null]
 config.cc.libs = [null]
