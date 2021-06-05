@@ -91,6 +91,16 @@
         "msvc",
         "debug"
       ]
+    },
+    {
+      "name": "windows-native-x64-ninja-msvc-debug",
+      "inherits": [
+        "project-structure",
+        "windows-native",
+        "x64-ninja",
+        "clang",
+        "debug"
+      ]
     }
   ],
   "buildPresets": [
