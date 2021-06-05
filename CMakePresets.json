@@ -19,6 +19,15 @@
         "value": "x64",
         "strategy": "external"
       }
+    },
+    {
+      "name": "msvc",
+      "description": "Base MSVC compiler preset",
+      "hidden": true,
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "cl",
+        "CMAKE_CXX_COMPILER": "cl"
+      }
     }
   ],
   "buildPresets": [
