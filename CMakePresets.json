@@ -9,7 +9,8 @@
       "name": "ninja",
       "displayName": "Ninja Config",
       "description": "Build using Ninja generator",
-      "generator": "Ninja"
+      "generator": "Ninja",
+      "hidden": true
     }
   ],
   "buildPresets": [
