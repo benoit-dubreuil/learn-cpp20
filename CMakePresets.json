@@ -24,6 +24,7 @@
       "name": "x64-ninja",
       "description": "Base x64 architecture preset for the Ninja generator",
       "hidden": true,
+      "inherits": "ninja",
       "architecture": {
         "value": "x64",
         "strategy": "external"
