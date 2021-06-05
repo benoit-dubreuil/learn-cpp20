@@ -7,10 +7,18 @@
   "configurePresets": [
     {
       "name": "ninja",
-      "displayName": "Ninja Config",
-      "description": "Build using Ninja generator",
+      "description": "Base Ninja generator preset",
       "generator": "Ninja",
       "hidden": true
+    },
+    {
+      "name": "x64-ninja",
+      "description": "Base x64 architecture preset for the Ninja generator",
+      "hidden": true,
+      "architecture": {
+        "value": "x64",
+        "strategy": "external"
+      }
     }
   ],
   "buildPresets": [
