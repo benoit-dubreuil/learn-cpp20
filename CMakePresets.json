@@ -93,6 +93,16 @@
       ]
     },
     {
+      "name": "windows-native-x64-ninja-msvc-release",
+      "inherits": [
+        "project-structure",
+        "windows-native",
+        "x64-ninja",
+        "msvc",
+        "release"
+      ]
+    },
+    {
       "name": "windows-native-x64-ninja-clang-debug",
       "inherits": [
         "project-structure",
@@ -105,8 +115,8 @@
   ],
   "buildPresets": [
     {
-      "name": "default",
-      "configurePreset": "default"
+      "name": "windows-native-x64-ninja-msvc-debug",
+      "configurePreset": []
     }
   ],
   "testPresets": [
