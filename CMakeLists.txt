@@ -5,3 +5,7 @@ project(
         VERSION 0.0
         HOMEPAGE_URL "https://github.com/benoit-dubreuil/learn-cpp20"
         LANGUAGES CXX)
+
+
+
+enable_testing()
