@@ -6,11 +6,10 @@
   },
   "configurePresets": [
     {
-      "name": "default",
-      "displayName": "Default Config",
-      "description": "Default build using Ninja generator",
-      "generator": "Ninja",
-      "binaryDir": "${sourceDir}/build/default"
+      "name": "ninja",
+      "displayName": "Ninja Config",
+      "description": "Build using Ninja generator",
+      "generator": "Ninja"
     }
   ],
   "buildPresets": [
