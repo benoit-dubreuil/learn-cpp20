@@ -37,6 +37,14 @@
       }
     },
     {
+      "name": "relwithdebinfo",
+      "description": "Base release with debug info target preset",
+      "hidden": true,
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "RelWithDebInfo"
+      }
+    },
+    {
       "name": "msvc",
       "description": "Base MSVC compiler preset",
       "hidden": true,
