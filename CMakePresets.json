@@ -11,23 +11,7 @@
       "displayName": "Default Config",
       "description": "Default build using Ninja generator",
       "generator": "Ninja",
-      "binaryDir": "${sourceDir}/build/default",
-      "cacheVariables": {
-        "FIRST_CACHE_VARIABLE": {
-          "type": "BOOL",
-          "value": "OFF"
-        },
-        "SECOND_CACHE_VARIABLE": "ON"
-      },
-      "environment": {
-        "MY_ENVIRONMENT_VARIABLE": "Test",
-        "PATH": "$env{HOME}/ninja/bin:$penv{PATH}"
-      },
-      "vendor": {
-        "example.com/ExampleIDE/1.0": {
-          "autoFormat": true
-        }
-      }
+      "binaryDir": "${sourceDir}/build/default"
     }
   ],
   "buildPresets": [
@@ -43,10 +27,5 @@
       "output": {"outputOnFailure": true},
       "execution": {"noTestsAction": "error", "stopOnFailure": true}
     }
-  ],
-  "vendor": {
-    "example.com/ExampleIDE/1.0": {
-      "autoFormat": false
-    }
-  }
+  ]
 }
