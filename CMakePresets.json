@@ -28,6 +28,15 @@
         "CMAKE_C_COMPILER": "cl",
         "CMAKE_CXX_COMPILER": "cl"
       }
+    },
+    {
+      "name": "clang",
+      "description": "Base Clang compiler preset",
+      "hidden": true,
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "clang",
+        "CMAKE_CXX_COMPILER": "clang++"
+      }
     }
   ],
   "buildPresets": [
