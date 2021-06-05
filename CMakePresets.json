@@ -103,6 +103,16 @@
       ]
     },
     {
+      "name": "windows-native-x64-ninja-msvc-relwithdebinfo",
+      "inherits": [
+        "project-structure",
+        "windows-native",
+        "x64-ninja",
+        "msvc",
+        "relwithdebinfo"
+      ]
+    },
+    {
       "name": "windows-native-x64-ninja-clang-debug",
       "inherits": [
         "project-structure",
