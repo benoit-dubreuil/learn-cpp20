@@ -111,6 +111,16 @@
         "clang",
         "debug"
       ]
+    },
+    {
+      "name": "windows-native-x64-ninja-clang-release",
+      "inherits": [
+        "project-structure",
+        "windows-native",
+        "x64-ninja",
+        "clang",
+        "release"
+      ]
     }
   ],
   "buildPresets": [
