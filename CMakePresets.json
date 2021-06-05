@@ -29,6 +29,14 @@
       }
     },
     {
+      "name": "release",
+      "description": "Base release target preset",
+      "hidden": true,
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
       "name": "msvc",
       "description": "Base MSVC compiler preset",
       "hidden": true,
