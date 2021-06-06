@@ -9,7 +9,7 @@
       "name": "project-structure",
       "description": "Base project structure preset",
       "hidden": true,
-      "binaryDir": "${sourceDir}/build/${presetName}",
+      "binaryDir": "build/${presetName}",
       "cacheVariables": {
         "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/${presetName}"
       }
