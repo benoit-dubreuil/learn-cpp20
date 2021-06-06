@@ -10,9 +10,10 @@ file(GLOB_RECURSE HEADER_LIST
         CONFIGURE_DEPENDS
         "${PROJECT_INCLUDE_DIR}/*.hpp")
 
+target_include_directories(${TARGET_NAME} PRIVATE ${PROJECT_INCLUDE_DIR})
 
-target_include_directories(learn-cpp20 PRIVATE ${PROJECT_INCLUDE_DIR})
-target_compile_features(learn-cpp20 PUBLIC cxx_std_20)
+target_compile_features(${TARGET_NAME} PUBLIC cxx_std_20)
+
 
 # IDEs should put the headers in a nice place
 source_group(
