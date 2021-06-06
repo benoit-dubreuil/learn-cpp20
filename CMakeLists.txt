@@ -28,6 +28,8 @@ if (CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
     else ()
         message(STATUS "Doxygen not found, not building docs")
     endif ()
+
+    # TODO : add test
 endif ()
 
 
