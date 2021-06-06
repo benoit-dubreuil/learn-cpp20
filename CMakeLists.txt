@@ -7,6 +7,7 @@ project(LearnCpp20
         HOMEPAGE_URL "https://github.com/benoit-dubreuil/learn-cpp20"
         LANGUAGES CXX)
 
+set(PROJECT_INCLUDE_DIR "${PROJECT_SOURCE_DIR}/include")
 
 # Only do these if this is the main project, and not if it is included through add_subdirectory
 if (CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
