@@ -4,11 +4,11 @@ set(TARGET_NAME "learn-cpp20-app")
 add_executable(${TARGET_NAME} Main.cpp)
 
 file(GLOB_RECURSE HEADER_LIST
-        FOLLOW_SYMLINKS
-        LIST_DIRECTORIES false
-        RELATIVE "${PROJECT_SOURCE_DIR}"
-        CONFIGURE_DEPENDS
-        "${PROJECT_INCLUDE_DIR}/*.hpp")
+     FOLLOW_SYMLINKS
+     LIST_DIRECTORIES false
+     RELATIVE "${PROJECT_SOURCE_DIR}"
+     CONFIGURE_DEPENDS
+     "${PROJECT_INCLUDE_DIR}/*.hpp")
 
 target_include_directories(${TARGET_NAME} PRIVATE ${PROJECT_INCLUDE_DIR})
 
