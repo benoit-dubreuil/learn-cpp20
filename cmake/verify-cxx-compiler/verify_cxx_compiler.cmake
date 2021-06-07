@@ -23,7 +23,7 @@ function(verify_cxx_compiler)
 
     if (lowered_cmake_cxx)
         if (lowered_env_cxx STREQUAL "cl")
-            message(STATUS "Assure CXX ENV is MSVC")
+            message(STATUS "Assure CXX CACHE is MSVC")
             assure_cxx_env_is_msvc()
         endif ()
 
