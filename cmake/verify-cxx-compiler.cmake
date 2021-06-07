@@ -1,3 +1,6 @@
 include_guard(GLOBAL)
 
-# TODO
+include("assure-cxx-compiler-is-msvc-cl") # TODO
+
+function(verify_cxx_compiler)
+endfunction()
