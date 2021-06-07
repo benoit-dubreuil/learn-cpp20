@@ -1,6 +1,6 @@
 include_guard(GLOBAL)
 
-function(find_msvc msvc_param)
+function(find_msvc r_msvc)
     file(GLOB vs_version_dirs
          LIST_DIRECTORIES true
          "C:/Program Files (x86)/Microsoft Visual Studio/[0-9]*")
@@ -35,5 +35,5 @@ function(find_msvc msvc_param)
         return()
     endif ()
 
-    set("${msvc_param}" "${MSVC_CL}" PARENT_SCOPE)
+    set("${r_msvc}" "${MSVC_CL}" PARENT_SCOPE)
 endfunction()
