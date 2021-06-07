@@ -1,5 +1,7 @@
 #!/usr/bin/env -S cmake -P
 
+include_guard(GLOBAL)
+
 file(GLOB vs_version_dirs
      LIST_DIRECTORIES true
      "C:/Program Files (x86)/Microsoft Visual Studio/[0-9]*")
