@@ -1,6 +1,6 @@
 include_guard(GLOBAL)
 
-function(is_msvc_cl_known is_msvc_cl_known_param)
+function(is_msvc_known is_msvc_known_param)
     find_program(MSVC_CL
                  "cl")
 
@@ -9,5 +9,5 @@ function(is_msvc_cl_known is_msvc_cl_known_param)
         return()
     endif ()
 
-    set("${is_msvc_cl_known_param}" "${MSVC_CL}" PARENT_SCOPE)
+    set("${is_msvc_known_param}" "${MSVC_CL}" PARENT_SCOPE)
 endfunction()

@@ -1,6 +1,6 @@
 include_guard(GLOBAL)
 
-include("compiler/msvc/assure-cxx-compiler-is-msvc-cl.cmake")
+include("compiler/msvc/assure-cxx-compiler-is-msvc.cmake")
 
 function(verify_cxx_compiler)
     # TODO
