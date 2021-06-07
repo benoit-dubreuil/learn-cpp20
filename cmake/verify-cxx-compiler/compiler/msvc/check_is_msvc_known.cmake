@@ -5,7 +5,7 @@ function(check_is_msvc_known r_is_msvc_known_param)
 
     if (MSVC_CL)
         set(IS_MSVC_KNOWN true)
-    else()
+    else ()
         set(IS_MSVC_KNOWN false)
         message(AUTHOR_WARNING "MSVC CL not found.")
     endif ()

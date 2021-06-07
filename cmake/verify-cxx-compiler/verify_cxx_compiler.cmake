@@ -13,7 +13,7 @@ function(verify_cxx_compiler)
             message(STATUS "Assure CXX CACHE is MSVC")
             assure_cxx_env_is_msvc()
         endif ()
-        
+
         return()
     endif ()
 
@@ -33,4 +33,3 @@ function(verify_cxx_compiler)
     message(AUTHOR_WARNING "No defined compiler to verify.")
 
 endfunction()
-
