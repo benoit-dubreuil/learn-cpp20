@@ -1,0 +1,214 @@
+{
+  "version": 2,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 20
+  },
+  "configurePresets": [
+    {
+      "name": "project-structure",
+      "description": "Base project structure preset",
+      "hidden": true,
+      "binaryDir": "build/${presetName}",
+      "cacheVariables": {
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/${presetName}"
+      }
+    },
+    {
+      "name": "ninja",
+      "description": "Base Ninja generator preset",
+      "generator": "Ninja",
+      "hidden": true
+    },
+    {
+      "name": "x64-ninja",
+      "description": "Base x64 architecture preset for the Ninja generator",
+      "hidden": true,
+      "inherits": "ninja",
+      "architecture": {
+        "value": "x64",
+        "strategy": "external"
+      }
+    },
+    {
+      "name": "debug",
+      "description": "Base debug target preset",
+      "hidden": true,
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
+      "name": "release",
+      "description": "Base release target preset",
+      "hidden": true,
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
+      "name": "relwithdebinfo",
+      "description": "Base release with debug info target preset",
+      "hidden": true,
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "RelWithDebInfo"
+      }
+    },
+    {
+      "name": "msvc",
+      "description": "Base MSVC compiler preset",
+      "hidden": true,
+      "environment": {
+        "CXX": "cl"
+      }
+    },
+    {
+      "name": "clang",
+      "description": "Base Clang compiler preset",
+      "hidden": true,
+      "environment": {
+        "CXX": "clang++"
+      }
+    },
+    {
+      "name": "windows-native",
+      "description": "Base Windows OS preset for native compilation",
+      "hidden": true,
+      "vendor": {
+        "microsoft.com/VisualStudioSettings/CMake/1.0": {
+          "hostOS": ["Windows"]
+        }
+      }
+    },
+    {
+      "name": "windows-native-x64-ninja-msvc-debug",
+      "inherits": [
+        "project-structure",
+        "windows-native",
+        "x64-ninja",
+        "msvc",
+        "debug"
+      ]
+    },
+    {
+      "name": "windows-native-x64-ninja-msvc-release",
+      "inherits": [
+        "project-structure",
+        "windows-native",
+        "x64-ninja",
+        "msvc",
+        "release"
+      ]
+    },
+    {
+      "name": "windows-native-x64-ninja-msvc-relwithdebinfo",
+      "inherits": [
+        "project-structure",
+        "windows-native",
+        "x64-ninja",
+        "msvc",
+        "relwithdebinfo"
+      ]
+    },
+    {
+      "name": "windows-native-x64-ninja-clang-debug",
+      "inherits": [
+        "project-structure",
+        "windows-native",
+        "x64-ninja",
+        "clang",
+        "debug"
+      ]
+    },
+    {
+      "name": "windows-native-x64-ninja-clang-release",
+      "inherits": [
+        "project-structure",
+        "windows-native",
+        "x64-ninja",
+        "clang",
+        "release"
+      ]
+    },
+    {
+      "name": "windows-native-x64-ninja-clang-relwithdebinfo",
+      "inherits": [
+        "project-structure",
+        "windows-native",
+        "x64-ninja",
+        "clang",
+        "relwithdebinfo"
+      ]
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "windows-native-x64-ninja-msvc-debug",
+      "configurePreset": "windows-native-x64-ninja-msvc-debug"
+    },
+    {
+      "name": "windows-native-x64-ninja-msvc-release",
+      "configurePreset": "windows-native-x64-ninja-msvc-release"
+    },
+    {
+      "name": "windows-native-x64-ninja-msvc-relwithdebinfo",
+      "configurePreset": "windows-native-x64-ninja-msvc-relwithdebinfo"
+    },
+    {
+      "name": "windows-native-x64-ninja-clang-debug",
+      "configurePreset": "windows-native-x64-ninja-clang-debug"
+    },
+    {
+      "name": "windows-native-x64-ninja-clang-release",
+      "configurePreset": "windows-native-x64-ninja-clang-release"
+    },
+    {
+      "name": "windows-native-x64-ninja-clang-relwithdebinfo",
+      "configurePreset": "windows-native-x64-ninja-clang-relwithdebinfo"
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "base",
+      "hidden": true,
+      "output": {
+        "shortProgress": true,
+        "outputOnFailure": true
+      },
+      "execution": {
+        "noTestsAction": "error",
+        "stopOnFailure": false
+      }
+    },
+    {
+      "name": "windows-native-x64-ninja-msvc-debug",
+      "configurePreset": "windows-native-x64-ninja-msvc-debug",
+      "inherits": "base"
+    },
+    {
+      "name": "windows-native-x64-ninja-msvc-release",
+      "configurePreset": "windows-native-x64-ninja-msvc-release",
+      "inherits": "base"
+    },
+    {
+      "name": "windows-native-x64-ninja-msvc-relwithdebinfo",
+      "configurePreset": "windows-native-x64-ninja-msvc-relwithdebinfo",
+      "inherits": "base"
+    },
+    {
+      "name": "windows-native-x64-ninja-clang-debug",
+      "configurePreset": "windows-native-x64-ninja-clang-debug",
+      "inherits": "base"
+    },
+    {
+      "name": "windows-native-x64-ninja-clang-release",
+      "configurePreset": "windows-native-x64-ninja-clang-release",
+      "inherits": "base"
+    },
+    {
+      "name": "windows-native-x64-ninja-clang-relwithdebinfo",
+      "configurePreset": "windows-native-x64-ninja-clang-relwithdebinfo",
+      "inherits": "base"
+    }
+  ]
+}

@@ -1,7 +1,0 @@
-project = learn-cpp20
-
-using version
-using config
-using test
-using install
-using dist
