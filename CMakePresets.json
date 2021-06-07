@@ -58,16 +58,16 @@
       "name": "msvc",
       "description": "Base MSVC compiler preset",
       "hidden": true,
-      "cacheVariables": {
-        "CMAKE_CXX_COMPILER": "cl"
+      "environment": {
+        "CXX": "cl"
       }
     },
     {
       "name": "clang",
       "description": "Base Clang compiler preset",
       "hidden": true,
-      "cacheVariables": {
-        "CMAKE_CXX_COMPILER": "clang++"
+      "environment": {
+        "CXX": "clang++"
       }
     },
     {
