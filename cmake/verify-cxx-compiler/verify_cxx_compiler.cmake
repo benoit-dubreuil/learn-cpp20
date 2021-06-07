@@ -5,7 +5,7 @@ include("${CMAKE_CURRENT_LIST_DIR}/compiler/msvc/assure_cxx_env_is_msvc.cmake")
 function(verify_cxx_compiler)
 
     if (DEFINED CACHE{CMAKE_CXX_COMPILER})
-        string(TOLOWER CACHE{CMAKE_CXX_COMPILER} lowered_cmake_cxx)
+        string(TOLOWER $CACHE{CMAKE_CXX_COMPILER} lowered_cmake_cxx)
     endif ()
 
     if (lowered_cmake_cxx)
@@ -18,7 +18,7 @@ function(verify_cxx_compiler)
     endif ()
 
     if (DEFINED ENV{CXX})
-        string(TOLOWER ENV{CXX} lowered_env_cxx)
+        string(TOLOWER $ENV{CXX} lowered_env_cxx)
     endif ()
 
     if (lowered_env_cxx)
