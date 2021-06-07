@@ -12,6 +12,7 @@ function(assure_cxx_env_is_msvc)
 
         if (msvc_cl)
             set(ENV{CXX} "${msvc_cl}")
+            unset(ENV{CXXFLAGS})
         endif ()
     endif ()
 
