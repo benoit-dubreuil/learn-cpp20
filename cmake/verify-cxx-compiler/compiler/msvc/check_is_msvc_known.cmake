@@ -1,6 +1,6 @@
 include_guard(GLOBAL)
 
-function(is_msvc_known is_msvc_known_param)
+function(check_is_msvc_known is_msvc_known_param)
     find_program(MSVC_CL "cl")
 
     set(IS_MSVC_KNOWN_VAL DEFINED MSVC_CL)
