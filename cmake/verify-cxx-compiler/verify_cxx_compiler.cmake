@@ -1,6 +1,6 @@
 include_guard(GLOBAL)
 
-include("compiler/msvc/assure_cxx_env_is_msvc.cmake")
+include("${CMAKE_CURRENT_LIST_DIR}/compiler/msvc/assure_cxx_env_is_msvc.cmake")
 
 function(verify_cxx_compiler)
 
