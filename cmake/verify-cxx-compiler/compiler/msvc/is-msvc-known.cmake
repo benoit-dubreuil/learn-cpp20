@@ -4,10 +4,11 @@ function(is_msvc_known is_msvc_known_param)
     find_program(MSVC_CL
                  "cl")
 
-    if (NOT MSVC_CL)
+    set(IS_MSVC_KNOWN_VAL DEFINED MSVC_CL)
+
+    if (NOT IS_MSVC_KNOWN_VAL)
         message(AUTHOR_WARNING "MSVC CL not found.")
-        return()
     endif ()
 
-    set("${is_msvc_known_param}" "${MSVC_CL}" PARENT_SCOPE)
+    set("${is_msvc_known_param}" IS_MSVC_KNOWN_VAL PARENT_SCOPE)
 endfunction()
