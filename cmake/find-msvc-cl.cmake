@@ -1,5 +1,3 @@
-#!/usr/bin/env -S cmake -P
-
 include_guard(GLOBAL)
 
 function(find_msvc_cl msvc_cl_ptr)
