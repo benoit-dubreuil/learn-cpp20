@@ -24,4 +24,4 @@ source_group(
         PREFIX "Headers"
         FILES ${HEADERS})
 
-include("${CMAKE_CURRENT_SOURCE_DIR}/compiler_options.cmake")
+include("${CMAKE_CURRENT_SOURCE_DIR}/extra_compiler_options.cmake")
