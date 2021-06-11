@@ -23,3 +23,5 @@ source_group(
         TREE ${PROJECT_INCLUDE_DIR}
         PREFIX "Headers"
         FILES ${HEADERS})
+
+include("${CMAKE_CURRENT_SOURCE_DIR}/compiler_options.cmake")
