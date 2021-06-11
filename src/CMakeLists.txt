@@ -6,9 +6,8 @@ add_executable(${TARGET_NAME} Main.cpp)
 file(GLOB_RECURSE HEADERS
      FOLLOW_SYMLINKS
      LIST_DIRECTORIES false
-     RELATIVE "${PROJECT_SOURCE_DIR}"
      CONFIGURE_DEPENDS
-     "${PROJECT_INCLUDE_DIR}/*.hpp")
+     "${PROJECT_INCLUDE_DIR}/*.[hm]pp")
 
 target_include_directories(${TARGET_NAME} PRIVATE ${PROJECT_INCLUDE_DIR})
 
@@ -21,8 +20,6 @@ set_target_properties(
 
 target_compile_features(${TARGET_NAME} PUBLIC cxx_std_20)
 
-
-# IDEs should put the headers in a nice place
 source_group(
         TREE ${PROJECT_INCLUDE_DIR}
         PREFIX "Headers"
