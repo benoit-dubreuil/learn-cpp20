@@ -8,6 +8,7 @@ project(LearnCpp20
         LANGUAGES CXX)
 
 set(PROJECT_INCLUDE_DIR "${PROJECT_SOURCE_DIR}/include")
+set(PROJECT_CMAKE_SCRIPT_DIR "${PROJECT_SOURCE_DIR}/cmake")
 
 # Only do these if this is the main project, and not if it is included through add_subdirectory
 if (CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
